@@ -85,8 +85,8 @@ class TaskScheduler:
             print(f"✓ Scheduler started - will run every {self.interval_minutes} minutes")
 
             # Run immediately on startup
-            print("\n🚀 Running initial scrape...")
-            self.scrape_and_notify()
+            #print("\n🚀 Running initial scrape...")
+            #self.scrape_and_notify()
         else:
             print("⚠️  Scheduler is already running")
 
