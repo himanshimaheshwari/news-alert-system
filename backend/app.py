@@ -11,12 +11,11 @@ import atexit
 # Load environment variables
 load_dotenv()
 
-# Import modules
-from database import Database
-from scraper import NewsScraper
-from email_service import EmailService
-from scheduler import TaskScheduler
-from routes.api import api_bp
+from backend.database import Database
+from backend.scraper import NewsScraper
+from backend.email_service import EmailService
+from backend.scheduler import TaskScheduler
+from backend.routes.api import api_bp
 
 # Initialize Flask app
 app = Flask(__name__, static_folder='../frontend', static_url_path='')
